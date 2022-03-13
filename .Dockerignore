@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.tox
+.coverage
+.coverage.*
+.cache
+Dockerfile
+binance-publice-data
+backtest-data
+db
