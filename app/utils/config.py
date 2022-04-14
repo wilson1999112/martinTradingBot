@@ -16,7 +16,8 @@ class Settings(BaseSettings):
         env_file = "env/compliance.env"
 
     # The defaults settings starts here
-    LEVERAGE: int = 8
+    LEVERAGE: int = 5
+    RUN_AFTER_SECOND: int = 60
     DATA_PATH: str = "backtest-data"
     DATA_TYPE: str = "ETHBUSD"
     DATA_INTERVAL: str = "4h"

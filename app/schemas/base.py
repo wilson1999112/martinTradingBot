@@ -5,6 +5,10 @@ class BalanceResult(BaseModel):
     """Balance Output Schemas"""
     result: float
 
+class TradeResult(BaseModel):
+    """Trade Output Schemas"""
+    result: str
+
 class BinanceInfo(BaseModel):
     """Binance price information"""
     open: float
@@ -20,10 +24,10 @@ class MartinV1State(BaseModel):
     next_price: float = 0
 
 class MartinV1Parm(BaseModel):
-    max_num_trade: int = 9
+    max_num_trade: int = 7
     price_mul_factor:float = 0.02
-    money_mul_factor: float = 1.4000000000000001
-    profit: float = 0.011
+    money_mul_factor: float = 1.7
+    profit: float = 0.013
 
 class MartinV2State(BaseModel):
     index: int = 0
